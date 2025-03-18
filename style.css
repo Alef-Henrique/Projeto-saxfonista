@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+
+}
+:root{
+    --cor-primaria:#f8f8f8;
+    --cor-secundario:#242424;
+    --cor-terciario:#ccc;
+}
+
+h1{
+    text-align: center;
+    font-size: 38px;
+    padding: 50px 0;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px;
+}
+/*CABEÇALHO*/
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    background-image: url(Imagens/fundo-preto.jpg);
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    z-index: 1000; 
+    
+    
+}
+
+.container-logo {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.container-logo img {
+    width: 100px;
+}
+.texto-logo{
+    color:var(--cor-primaria);
+    padding-left: 5px;
+}
+.texto-logo p{
+    letter-spacing: 8px;
+    font-weight: 400;
+    font-family: "Oswald", sans-serif;
+}
+.texto-logo h2{
+    font-family: "Oswald", sans-serif;
+    font-size: 32px;
+
+}
+nav ul li { 
+    display: inline-block;
+    color: black;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+a:hover{
+    border-bottom: solid 2px var(--cor-primaria);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    gap: 1px;
+}
+a{
+    color:var(--cor-primaria);
+}
+.style-contact a{
+    background-color: var(--cor-primaria);
+    padding: 10px;
+    border-radius: 12px;
+    border-bottom: none;
+    color: var(--cor-secundario);
+
+}
+.style-contact a:hover{
+    background-color: var(--cor-terciario);
+    
+}
+/*CABEÇALHO*/
+
+/*BANNER*/
+.container-banner {
+    background-image: url(Imagens/foto\ de\ fundo.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 1
+}
+.container-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); 
+    z-index: -1;
+}
+.container-banner{
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap; 
+}
+.texto-banner h2{
+    font-size: 62px;
+    letter-spacing: 2px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    color: var(--cor-primaria);  
+}
+
+.texto-banner {
+    width: 700px; 
+}
+
+.texto-banner .btn-saiba{
+    display: flex;
+    position: relative;
+    top: 20px;
+    left: 60px;
+    padding: 15px 45px ;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: "Bebas Neue", sans-serif;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundario); 
+    
+}
+.btn-saiba:hover{
+    background-color:var(--cor-secundario);
+    color: var(--cor-primaria);   
+}
+.rede-sociais{
+    position: relative;
+    right: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+ 
+}
+.rede-sociais i {
+    font-size: 28px;
+    padding: 16px;
+    background-color: var(--cor-primaria);
+    border-radius: 12px;
+    display: flex;
+    gap: 15px;
+    color:var(--cor-secundario); 
+}
+
+.rede-sociais i:hover{
+    background-color:var(--cor-secundario);
+    color:var(--cor-primaria);
+    border-bottom: none;
+
+}
+.rede-sociais a:hover{
+    background-color:var(--cor-secundario);
+    color:var(--cor-primaria);
+    border-radius: 12px;
+    border-bottom: none;
+
+}
+
+/*BANNER*/
+
+/*SOBRE MIM*/
+.imagem-sobre-mim img{
+    width: 400px;
+    height: 580px;
+    border-radius: 16px;
+}
+.container-sobre-mim{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.texto-sobre-mim{
+    width: 600px;
+    font-size: 24px;
+}
+.sobre-mim{
+    background-image: url(Imagens/fundo-preto.jpg);
+    background-size: cover;
+    padding: 30px 0;
+    color: var(--cor-primaria);
+    font-family: "Oswald", sans-serif;
+    padding-bottom: 100px;
+}
+
+/*SOBRE MIM*/
+
+/*EVENTOS*/
+
+.sessao-eventos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    max-width: 100%; 
+    padding: 20px;
+    margin: 0 auto; 
+    
+}
+.container-eventos {
+    padding: 50px 0;
+
+}
+.container-eventos{
+    
+    background-image: url(Imagens/fundo-branco.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.sessao-eventos div {
+    position: relative;
+    overflow: hidden; 
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.sessao-eventos img {
+    width: 100%;
+    height: 400px;
+    display: block;
+    border-radius: 10px;
+}
+
+
+.sessao-eventos div:hover img {
+    opacity: 0.3; 
+    
+}
+.descricao {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color:var(--cor-secundario);
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    opacity: 0; 
+    transition: opacity 0.2s ease-in-out;
+    width: 80%; 
+    text-align: center;
+}
+.informacao-extra {
+    display: none; 
+    text-align: center;
+    font-size: 21px;
+    font-family: "Oswald", sans-serif;
+    color:var(--cor-secundario);
+    margin-top: 5px;
+    
+    
+
+}
+/*PRIMEIRA SESSÃO DE MÚSICAS TOCADAS*/
+.primeira-sessao-musica{
+    background-image: url(Imagens/fundo-preto.jpg);
+    background-size: cover;
+    padding: 30px 0;
+    color: var(--cor-primaria);
+}
+.primeiro-container-musica{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px 0; 
+}
+.primeira-sessao-musica img{
+    width: 400px;
+    height: 550px;
+    border-radius: 15px;
+}
+
+
+.primeiro-sessao-musica-texto{
+    width: 500px;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+.primeiro-sessao-musica-texto h2{
+    font-size: 38px;
+    padding-bottom: 20px;
+    color: var(--cor-primaria);
+    padding-bottom: 36px;
+}
+.primeiro-sessao-musica-texto li a{
+    font-size: 24px;
+
+}
+/*PRIMEIRA SESSÃO DE MÚSICAS TOCADAS*/
+
+/*SEGUNDA SESSÃO DE MÚSICAS TOCADAS*/
+.segunda-sessao-musica{
+    background-color: var(--cor-secundario);
+    margin: 50px 0;
+    padding: 30px 0;
+}
+.segundo-container-musica{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px 0; 
+    flex-direction: row-reverse;
+}
+.segunda-sessao-musica img{
+    width: 600px;
+    height: 550px;
+    border-radius: 15px;
+}
+
+.segunda-sessao-musica h1{
+    color: var(--cor-primaria);
+}
+.segunda-sessao-musica-texto{
+    width: 500px;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+.segunda-sessao-musica-texto h2{
+    font-size: 38px;
+    padding-bottom: 20px;
+    color: var(--cor-primaria);
+    text-align: right;
+    padding-bottom: 36px;
+}
+.segunda-sessao-musica-texto li {
+    font-size: 24px;
+    text-align: right;
+}
+.sessao-contato {
+    background-image: url(Imagens/fundo-branco.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background:var(--cor-primaria);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    
+}
+input, .btn-contato {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--cor-terciario);
+    border-radius: 5px;
+}
+ .btn-contato {
+    background:var(--cor-secundario);
+    color:var(--cor-primaria);
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.btn-contato:hover {
+    background:var(--cor-terciario);
+    color:var(--cor-secundario);
+}
+select{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--cor-terciario);
+    border-radius: 5px;
+    
+}
+label{
+    color:var(--cor-secundario);
+    font-family: "Oswald", sans-serif;
+
+}
+
