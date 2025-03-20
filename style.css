@@ -24,6 +24,7 @@ h1{
 header {
     display: flex;
     justify-content: space-between;
+    position: fixed;
     padding: 20px 0;
     background-image: url(Imagens/fundo-preto.jpg);
     background-size: cover;
