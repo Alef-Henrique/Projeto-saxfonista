@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,400;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz@8..144&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,400;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz@8..144&display=swap"
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,42 +23,79 @@
 
 <body>
     <header>
-        <article class="container-logo">
-            <div class="imagem-logo">
-                <img src="Imagens/logo2.png" alt="logo-saxofone">
-            </div>
-            <div class="texto-logo">
-                <h2>Alefe Amaro</h2>
-                <p>SAXOFONISTA</p>
-            </div>
-        </article>
+        <a href="#inicio" class="link-inicio">
+            <article class="container-logo">
+                <div class="imagem-logo">
+                    <img src="Imagens/logo2.png" alt="logo-saxofone">
+    
+                </div>
+                <div class="texto-logo">
+                    <h2>Alefe Amaro</h2>
+    
+                    <p>SAXOFONISTA</p>
+                </div>
+            </article>
+        </a>
+        
 
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
+        <nav class="menu-desktop">
+            <ul class="link-list">
+
                 <li><a href="#sobremim">Sobre mim</a></li>
                 <li><a href="#eventos">Eventos</a></li>
                 <li><a href="#musicas">Músicas tacadas</a></li>
-                <li class="style-contact"><a href="#contato">Contato</a></li>
             </ul>
+            <a href="#contato" class="link-contato">
+                <button class="style-contact">Contato</button>
+            </a>
         </nav>
+        
+        <div class="btn-abrir-menu" id="btn-menu">
+            <i class="bi bi-list"></i>
+        </div>
+        <div class="menu-mobile" id="menu-mobile">
+
+            <div class="btn-fechar" id="btn">
+                <i class="bi bi-x-lg"></i>
+            </div>
+            <nav class="nav-mob">
+                <ul>
+
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobremim">Sobre mim</a></li>
+                    <li><a href="#eventos">Eventos</a></li>
+                    <li><a href="#musicas">Músicas tacadas</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <div class="overlay-menu"></div>
+
+
     </header>
 
     <main class="conteudo-principal">
 
-        <article class="container-banner" id="home">
-            <div class="texto-banner">
+        <article class="container-banner" id="inicio">
+        
+                <div class="texto-banner">
 
-                <h2>"A música tem o poder de transformar momentos comuns em inesquecíveis."</h2>
+                    <div class="texto">
+                        <h2>"A música tem o poder de transformar momentos comuns em inesquecíveis."</h2>
+                    </div>
+                    <div class="bnt-saiba-contato">
+                        <a href="#contato" class="btn-saiba"><button>Saiba mais</button></a>
 
-                <a href="#contato"><button class="btn-saiba">Saiba mais</button></a>
+                    </div>
 
-            </div>
-            <div class="rede-sociais">
-                <a href="https://www.tiktok.com/@alefe_sax" target="_blank"><i class="bi bi-tiktok"></i></a>
-                <a href="https://www.facebook.com/share/12GtUXKtwNh/" target="_blank"><i class="bi bi-facebook"></i></a>
-                <a href="https://www.instagram.com/alefeamarosax7?igsh=MWRoaWpmeXVjeWk2Mg==" target="_blank"><i class="bi bi-instagram"></i></a>
-            </div>
+                </div>
+                <ul class="rede-sociais">
+                    <li><a href="https://www.tiktok.com/@alefe_sax" target="_blank"><i class="bi bi-tiktok"></i></a></li>
+                    <li><a href="https://www.facebook.com/share/12GtUXKtwNh/" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/alefeamarosax7?igsh=MWRoaWpmeXVjeWk2Mg==" target="_blank"><i
+                        class="bi bi-instagram"></i></a></li>
+                </ul>
 
         </article>
         <article class="sobre-mim" id="sobremim">
@@ -83,25 +121,29 @@
                 <div>
                     <img src="Imagens/foto-casamento.jpg" class="imagem">
                     <p class="descricao">Casamentos</p>
-                    <div class="informacao-extra"><p>Este evento inclui música ao vivo e personalização especial para noivos.</p></div>
+                    <div class="informacao-extra">
+                        <p>Este evento inclui música ao vivo e personalização especial para noivos.</p>
+                    </div>
                 </div>
-        
+
                 <div>
                     <img src="Imagens/foto-aniversario.jpeg" class="imagem">
                     <p class="descricao">Aniversários</p>
-                    <p class="informacao-extra">Oferecemos um serviço especial com músicas animadas para todas as idades.</p>
+                    <p class="informacao-extra">Oferecemos um serviço especial com músicas animadas para todas as
+                        idades.</p>
                 </div>
-        
+
                 <div>
                     <img src="Imagens/foto-coporativo.png" class="imagem">
                     <p class="descricao">Eventos Corporativos</p>
                     <p class="informacao-extra">Música ambiente profissional para criar um ambiente sofisticado.</p>
                 </div>
-        
+
                 <div>
                     <img src="Imagens/foto-restaurantes.png" class="imagem">
                     <p class="descricao">Restaurantes</p>
-                    <p class="informacao-extra">Trabalhamos com repertórios variados para harmonizar com seu ambiente.</p>
+                    <p class="informacao-extra">Trabalhamos com repertórios variados para harmonizar com seu ambiente.
+                    </p>
                 </div>
             </article>
 
@@ -155,19 +197,32 @@
                     <h2>Musica Popular Brasileira</h2>
 
                     <ul>
-                        <li><a href="https://www.youtube.com/watch?v=iyJDuJggiEM" target="_blank">Velha Infância - Tribalistas</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=xJNKT9HAXRc" target="_blank">Era uma vez - Kell Smith</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=vaXCSYva2FM" target="_blank">Ouvi Dizer - Melim</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=tRmtL8yxcSA" target="_blank">Sorri, sou Rei - Natiruts</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=sWhy1VcvvgY" target="_blank">Trem-bala - Ana Vilela</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=8nOEO7Hm7rg" target="_blank">De janeiro a janeiro - Roberta Campos e Nando Reis</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=YVJijQIualA" target="_blank">O Sol - Vitor kley</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=bsN1_oRPLns" target="_blank">Como é grande o meu amor por você - Roberto carlos</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=sB8_zYjxSGg" target="_blank">Pra você guardei o Amor - Nando Reis</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=XLpdc_uVSgY" target="_blank">Vamos fugir - Skank</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=9Sk7RQtSl5g" target="_blank">Pupila - Ana vitoria e vitor kley</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=W62-ZG9tPpI" target="_blank">Amei Te Ver - Tiago Iorc</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=W62-ZG9tPpI" target="_blank">Meu Abrigo - melin</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=iyJDuJggiEM" target="_blank">Velha Infância -
+                                Tribalistas</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=xJNKT9HAXRc" target="_blank">Era uma vez - Kell
+                                Smith</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=vaXCSYva2FM" target="_blank">Ouvi Dizer - Melim</a>
+                        </li>
+                        <li><a href="https://www.youtube.com/watch?v=tRmtL8yxcSA" target="_blank">Sorri, sou Rei -
+                                Natiruts</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=sWhy1VcvvgY" target="_blank">Trem-bala - Ana
+                                Vilela</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=8nOEO7Hm7rg" target="_blank">De janeiro a janeiro -
+                                Roberta Campos e Nando Reis</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=YVJijQIualA" target="_blank">O Sol - Vitor kley</a>
+                        </li>
+                        <li><a href="https://www.youtube.com/watch?v=bsN1_oRPLns" target="_blank">Como é grande o meu
+                                amor por você - Roberto carlos</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=sB8_zYjxSGg" target="_blank">Pra você guardei o
+                                Amor - Nando Reis</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=XLpdc_uVSgY" target="_blank">Vamos fugir -
+                                Skank</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=9Sk7RQtSl5g" target="_blank">Pupila - Ana vitoria e
+                                vitor kley</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=W62-ZG9tPpI" target="_blank">Amei Te Ver - Tiago
+                                Iorc</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=W62-ZG9tPpI" target="_blank">Meu Abrigo - melin</a>
+                        </li>
                     </ul>
 
                 </div>
@@ -183,8 +238,8 @@
             <form onsubmit="enviarWhatsApp(event)">
                 <input type="text" id="nome" placeholder="Nome" required>
                 <input type="text" id="sobrenome" placeholder="Sobrenome" required>
-                
-                <select class="select-eventos" >
+
+                <select class="select-eventos">
                     <option value="selecione">Selecione</option>
                     <option value="aniversários">Aniversários</option>
                     <option value="casamentos">Casamentos</option>
@@ -196,14 +251,17 @@
                 <button type="submit" class="btn-contato">Enviar via WhatsApp</button>
             </form>
 
-
-
         </section>
-
-
-
     </main>
-
+    <footer>
+        <h1>Redes socias</h1>
+        <ul class="rede-sociais-rodape">
+            <li><a href="https://www.tiktok.com/@alefe_sax" target="_blank"><i class="bi bi-tiktok"></i></a></li>
+            <li><a href="https://www.facebook.com/share/12GtUXKtwNh/" target="_blank"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/alefeamarosax7?igsh=MWRoaWpmeXVjeWk2Mg==" target="_blank"><i
+                class="bi bi-instagram"></i></a></li>
+        </ul>
+    </footer>
 
     <script src="javascript.js"></script>
 </body>

@@ -55,3 +55,22 @@ function enviarWhatsApp(event) {
 
     window.open(url, "_blank");
 }
+let btnMenu = document.getElementById('btn-menu')
+let menu = document.getElementById('menu-mobile')
+let overlay = document.querySelector('.overlay-menu')
+let btnFechar = document.getElementById('btn'); // Botão de fechar
+
+btnMenu.addEventListener('click', () => {
+    menu.classList.add('abrir-menu');
+    overlay.style.display = "block"; // Exibir o overlay ao abrir o menu
+});
+
+btnFechar.addEventListener('click', () => {
+    menu.classList.remove('abrir-menu');
+    overlay.style.display = "none"; // Ocultar o overlay ao fechar o menu
+});
+
+overlay.addEventListener('click', () => {
+    menu.classList.remove('abrir-menu');
+    overlay.style.display = "none"; 
+});
