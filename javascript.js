@@ -84,13 +84,13 @@ document.addEventListener("DOMContentLoaded", function () {
     let lastScrollTop = 0;
     const header = document.getElementById("header");
 
+    header.style.top = "-200px";
+
     window.addEventListener("scroll", function () {
         let scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-        if (scrollTop > lastScrollTop) {
-            // Rolando para baixo, esconde o header
+        if (scrollTop > 20 ) {
             header.style.top = "0";
-            
         } else {
             header.style.top = "-200px";
         }
