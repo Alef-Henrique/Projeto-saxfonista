@@ -79,3 +79,22 @@ btnFecharSessao.addEventListener('click',() =>{
     menu.classList.remove('abrir-menu');
     overlay.style.display = "none";
 })
+
+document.addEventListener("DOMContentLoaded", function () {
+    let lastScrollTop = 0;
+    const header = document.getElementById("header");
+
+    window.addEventListener("scroll", function () {
+        let scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            // Rolando para baixo, esconde o header
+            header.style.top = "-200px"; // Ajuste conforme necessário
+        } else {
+            // Rolando para cima, exibe o header
+            header.style.top = "0";
+        }
+
+        lastScrollTop = scrollTop;
+    });
+});
