@@ -244,7 +244,7 @@ a{
 }
 .container-eventos{
     
-    background-image: url(Imagens/fundo-branco.webp);
+    background-image: url(Imagens/fundo-branco.jpg);
     background-size: cover;
     height: 100vh;
     
@@ -376,7 +376,7 @@ a{
 
 /*CONTATO*/
 .sessao-contato {
-    background-image: url(Imagens/fundo-branco.webp);
+    background-image: url(Imagens/fundo-branco.jpg);
     background-size: cover;
     width: 100%;
     height: 100vh; 
@@ -549,7 +549,7 @@ footer h1{
         width: 100%;
     }
     .container-banner {
-        background-image: url(Imagens/foto-de-fundo\ -mobile.jpg);
+        background-image: url(Imagens/foto-de-fundo-mobile.jpg);
         flex-direction:column-reverse;
         align-items: center;
         height: 250px;
