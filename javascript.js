@@ -89,9 +89,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (scrollTop > lastScrollTop) {
             // Rolando para baixo, esconde o header
-            header.style.top = "0"; // Ajuste conforme necessário
+            header.style.top = "0";
+            
         } else {
-            // Rolando para cima, exibe o header
             header.style.top = "-200px";
         }
 
