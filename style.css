@@ -439,7 +439,7 @@ footer{
 }
 footer h1{
     font-family: "Bebas Neue", sans-serif;
-    font-size: 24px;
+    font-size: 46px;
     color:var(--cor-primaria);
 }
 .rede-sociais-rodape{
@@ -448,9 +448,9 @@ footer h1{
 
 }
 .rede-sociais-rodape li i{
-    padding: 16px;
+    padding: 24px;
     color:var(--cor-primaria);
-    font-size: 30px;
+    font-size: 36px;
     margin: 0 auto;
 }    
 .rede-sociais-rodape a:hover{
@@ -647,6 +647,14 @@ footer h1{
     }
     form{
         max-width: 90%;
+    }
+    footer h1{
+        font-size: 30px;
+    }
+    .rede-sociais-rodape li i{
+        font-size: 28px;
+        padding: 15px;
+
     }
 
 }
