@@ -12,7 +12,7 @@
 :root{
     --cor-primaria:#f8f8f8;
     --cor-secundario:#242424;
-    --cor-terciario:#ccc;
+    --cor-terciario:#616161;
 }
 
 h1{
@@ -28,7 +28,7 @@ header {
     justify-content: space-between;
     position: fixed;
     transition: top 0.3s ease-in-out;
-    padding: 20px 0;
+    padding: 12px 0;
     background-image: url(Imagens/fundo-preto.webp);
     background-size: cover;
     width: 100%;
@@ -46,20 +46,21 @@ header {
 }
 
 .container-logo img {
-    width: 100px;
+    width: 90px;
 }
 .texto-logo{
     color:var(--cor-primaria);
     padding-left: 5px;
 }
 .texto-logo p{
-    letter-spacing: 8px;
+    letter-spacing: 6.5px;
+    font-size: 15px;
     font-weight: 400;
     font-family: "Oswald", sans-serif;
 }
 .texto-logo h2{
     font-family: "Oswald", sans-serif;
-    font-size: 32px;
+    font-size: 28px;
 
 }
 
@@ -68,7 +69,7 @@ header {
     font-family: "Oswald", sans-serif;
     font-size: 20px;
     text-transform: uppercase;
-    margin-left: 20px;
+    margin-left: 15px;
 }
 a:hover{
     border-bottom: solid 2px var(--cor-primaria);
@@ -79,7 +80,7 @@ a:hover{
     justify-content: center;
     align-items: center;
     position: relative;
-    left: 300px;
+    left: 19em;
     gap: 10px;
 }
 a{
@@ -116,6 +117,7 @@ a{
     flex-wrap: wrap; 
     background-image: url(Imagens/foto-de-fundo.webp);
     background-size: cover;
+    padding-top: 50px;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -144,9 +146,11 @@ a{
 }
 
 .texto-banner {
-    width: 45vw;
+    width: 600px;
     display: flex;
     flex-direction: column; 
+    position: relative;
+    left: 2em;
 }
 .bnt-saiba-contato{
     margin: 0 auto;
@@ -169,7 +173,7 @@ a{
 }
 .rede-sociais{
     position: relative;
-    right: 60px;
+    right: 40px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -203,8 +207,8 @@ a{
 
 /*SOBRE MIM*/
 .imagem-sobre-mim img{
-    width: 28vw;
-    height: 70vh;
+    width: 26vw;
+    height: 75vh;
     border-radius: 16px;
 }
 .container-sobre-mim{
@@ -239,17 +243,15 @@ a{
     
 }
 .container-eventos {
-    padding: 50px 0;
+    padding: 100px 0;
 
 }
 .container-eventos{
-    
     background-color: var(--cor-primaria);
     background-size: cover;
-    height: 100vh;
+    height: 100vh;  
     
 }
-
 
 .sessao-eventos div {
     position: relative;
@@ -309,8 +311,8 @@ a{
     margin: 50px 0; 
 }
 .primeira-sessao-musica img{
-    width: 28vw;
-    height: 70vh;
+    width: 26vw;
+    height: 75vh;
     border-radius: 15px;
 }
 
@@ -347,8 +349,8 @@ a{
     flex-direction: row-reverse;
 }
 .segunda-sessao-musica img{
-    width: 28vw;
-    height: 70vh;
+    width: 26vw;
+    height: 75vh;
     border-radius: 15px;
 }
 
@@ -455,8 +457,11 @@ footer h1{
 }    
 .rede-sociais-rodape a:hover{
     border-bottom:none;
-
 }
+.rede-sociais-rodape li i:hover{
+    color: var(--cor-terciario);
+}
+
 /*CONTATO*/
 
 /*MENU HAMBURGUER*/
@@ -522,16 +527,104 @@ footer h1{
     z-index: 777;
     display: none;
 }
+@media (min-width:1200px) and (max-width:1310px) {
+    .container-logo{
+        position: relative;
+        left:2em;
+     }
+    .menu-desktop{
+        left: 15em;
+     }
+     .imagem-sobre-mim img{
+        width: 26vw;
+        height: 52vh;
+    }
+    .primeiro-container-musica img{
+        width: 26vw;
+        height: 52vh;
+    }
+    .segundo-container-musica img{
+        width: 26vw;
+        height: 52vh;
+    } 
+}
 
-@media (min-width:300px) and (max-width:500px) {
+@media (min-width:600px) and (max-width:1200px) {
+    .menu-desktop{
+        display: none;
+    }
+    .btn-abrir-menu i{
+        display: ruby;
+        font-size: 50px;
+    }
+    .btn-abrir-menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 5px;
+    }
+    .container-banner{
+        flex-direction: column;
+
+    }
+    .texto-banner{
+        position: relative;
+        top: 15em;
+    }
+    .rede-sociais {
+        display: none;
+    }
+    .texto-banner{
+        left: 0;
+        width: 80vw;
+    }
+    .texto-banner h2{
+        font-size: 60px;
+    }
+    .container-sobre-mim {
+        flex-direction: column;
+    }
+    .texto-sobre-mim{
+        width: 80vw;
+        text-align: center;
+        padding: 30px;
+    }
+    .imagem-sobre-mim img{
+        width: 300px;
+        height: 400px;
+        border-radius: 12px;
+    }
+    .sessao-eventos{
+        grid-template-columns: repeat(2, 2fr); 
+        margin: 0 auto;
+        max-width: 80%; 
+    }
+    .container-eventos{
+        height: 100%;
+        margin-bottom: 0;
+    }
+    .primeiro-container-musica img{
+        width: 28vw;
+        height: 48vh;
+    }
+    .segundo-container-musica img{
+        width: 28vw;
+        height: 48vh;
+    }
+
+ 
+}
+
+@media (min-width:300px) and (max-width:600px) {
     .container-logo img {
-        width: 60px;
+        width: 55px;
     }
     .texto-logo h2{
-        font-size: 24px;
+        font-size: 22px;
     }
     .texto-logo p{
-        font-size: 10px;
+        font-size: 8px;
+        letter-spacing: 6.5px;
     }
 
     .menu-desktop{
@@ -545,7 +638,7 @@ footer h1{
      header{
         display: flex;
         align-items: center;
-        padding: 15px 0 ;
+        padding: 10px 0 ;
         width: 100%;
     }
     .container-banner {
@@ -561,7 +654,7 @@ footer h1{
     }
 
     .texto-banner h2{
-        font-size: 24px;
+        font-size: 20px;
     }
     .texto-banner {
         width: 70vw;
@@ -596,12 +689,13 @@ footer h1{
         padding-bottom: 30px;
     }
     .imagem-sobre-mim img{
-        width: 70vw;
-        height: 50vh;
+        width: 300px;
+        height: 400px;
         border-radius: 12px;
     }
     .container-eventos{
         height: 100%;
+        margin-bottom: 0;
     }
     .sessao-eventos{
         grid-template-columns: repeat(1, 4fr); 
@@ -625,7 +719,7 @@ footer h1{
         text-align:left;
         width: 80vw;
         margin: 0 auto;
-        font-size: 28px;
+        font-size: 26px;
     }
     .segunda-sessao-musica-texto{
         width: 80vw;
@@ -635,14 +729,14 @@ footer h1{
     .primeiro-sessao-musica-texto h2, .segunda-sessao-musica-texto h2{
         font-size: 26px;
     }
-    .primeiro-sessao-musica-texto li a{
+    .primeiro-sessao-musica-texto .segunda-sessao-musica-texto li a{
         font-size: 20px;
     }
     .segunda-sessao-imagem, .sessao-imagem{
         display: none;
     }
     .sessao-contato{
-        height: 80vh;
+        height: 100vh;
         
     }
     form{

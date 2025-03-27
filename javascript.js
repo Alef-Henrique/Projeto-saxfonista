@@ -1,24 +1,25 @@
 let imagens = document.querySelectorAll(".imagem");
 
-for (let i = 0; i < imagens.length; i++) {
-    let descricao = imagens[i].nextElementSibling; // Descrição
-    let infoExtra = descricao.nextElementSibling; // Informação extra
 
-    // Evento de passar o mouse (hover)
+for (let i = 0; i < imagens.length; i++) {
+    let descricao = imagens[i].nextElementSibling;
+    let infoExtra = descricao.nextElementSibling;
+
     imagens[i].addEventListener("mouseover", function() {
         descricao.style.opacity = "1"; // Mostra a descrição
     });
 
-    // Evento de tirar o mouse
+
     imagens[i].addEventListener("mouseout", function() {
-        descricao.style.opacity = "0"; // Esconde a descrição
+        descricao.style.opacity = "0"; 
     });
 
     // Evento de clique
     imagens[i].addEventListener("click", function() {
-        // Alterna entre mostrar e esconder a informação extra
+
         if (infoExtra.style.display === "none" || infoExtra.style.display === "") {
-            infoExtra.style.display = "block";
+            infoExtra.style.display = "block"
+            
         } else {
             infoExtra.style.display = "none";
         }
@@ -58,17 +59,17 @@ function enviarWhatsApp(event) {
 let btnMenu = document.getElementById('btn-menu')
 let menu = document.getElementById('menu-mobile')
 let overlay = document.querySelector('.overlay-menu')
-let btnFechar = document.getElementById('btn'); // Botão de fechar
+let btnFechar = document.getElementById('btn'); 
 let btnFecharSessao = document.getElementById('btn-fechar-lista')
 
 btnMenu.addEventListener('click', () => {
     menu.classList.add('abrir-menu');
-    overlay.style.display = "block"; // Exibir o overlay ao abrir o menu
+    overlay.style.display = "block";
 });
 
 btnFechar.addEventListener('click', () => {
     menu.classList.remove('abrir-menu');
-    overlay.style.display = "none"; // Ocultar o overlay ao fechar o menu
+    overlay.style.display = "none";
 });
 
 overlay.addEventListener('click', () => {
@@ -82,17 +83,14 @@ btnFecharSessao.addEventListener('click',() =>{
 
 document.addEventListener("DOMContentLoaded", function () {
     let lastScrollTop = 0;
-    const header = document.getElementById("header");
-
-    header.style.top = "-200px";
 
     window.addEventListener("scroll", function () {
         let scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-        if (scrollTop > 20 ) {
-            header.style.top = "0";
-        } else {
+        if (scrollTop > lastScrollTop) {
             header.style.top = "-200px";
+        } else {
+            header.style.top = "0";
         }
 
         lastScrollTop = scrollTop;
