@@ -550,6 +550,14 @@ footer h1{
 }
 
 @media (min-width:600px) and (max-width:1200px) {
+    .container-banner {
+        background-image: url(Imagens/foto-de-fundo-mobile.jpg);
+        flex-direction:column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 3em;
+        width: 100%;
+    }
     .menu-desktop{
         display: none;
     }
@@ -563,23 +571,17 @@ footer h1{
         justify-content: center;
         padding-right: 5px;
     }
-    .container-banner{
-        flex-direction: column;
-
-    }
-    .texto-banner{
-        position: relative;
-        top: 15em;
-    }
-    .rede-sociais {
-        display: none;
-    }
     .texto-banner{
         left: 0;
         width: 80vw;
     }
     .texto-banner h2{
         font-size: 60px;
+    }
+    .rede-sociais {
+        flex-direction: row;
+        display: flex;
+        right: 0px;
     }
     .container-sobre-mim {
         flex-direction: column;
