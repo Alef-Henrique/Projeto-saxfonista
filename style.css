@@ -249,7 +249,7 @@ a{
 .container-eventos{
     background-color: var(--cor-primaria);
     background-size: cover;
-    height: 100vh;  
+    height: 100%;  
     
 }
 
